@@ -154,6 +154,13 @@ if __name__ == "__main__":
     reviewer1.courses_attached += ['Python', 'Git']
     reviewer2.courses_attached += ['Python', 'Java']
 
+    print("=== Примеры ошибочных ситуаций (возврат 'Ошибка') ===")
+    print(student1.rate_lecture(reviewer1, 'Python', 5))
+    print(student1.rate_lecture(lecturer1, 'Java', 5))
+    print(reviewer1.rate_hw(student1, 'C++', 5))
+    print(reviewer2.rate_hw(student3, 'Java', 5))
+    print()
+
     reviewer1.rate_hw(student1, 'Python', 10)
     reviewer1.rate_hw(student1, 'Python', 9)
     reviewer1.rate_hw(student1, 'Git', 8)
